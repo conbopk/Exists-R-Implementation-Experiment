@@ -1,0 +1,26 @@
+# Configuration file for Neural Network Complexity Experiment
+
+network:
+  input_dim: 2
+  hidden_dim: 10
+  output_dim: relu
+  activation: relu
+
+training:
+  learning_rate: 0.001
+  max_iterations: 10000
+  tolerance: 1.0e-6
+  batch_size: null  # null means full batch
+  optimizer: adam
+
+gadget:
+  variable_slope_range: [1.5, 3.0]  # [3.2, 3] from paper
+  inversion_num_breaklines: 5
+  measuring_line_distance: 1.0
+
+experiment:
+  random_seed: 42
+  num_trials: 10
+  save_plots: true
+  save_results: true
+  verbose: true
