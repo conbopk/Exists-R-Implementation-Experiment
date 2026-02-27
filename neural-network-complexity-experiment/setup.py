@@ -47,6 +47,7 @@ setup(
             "mypy>=1.4.0",
             "jupyter>=1.0.0",
             "plotly>=5.14.0",
+            "pytest>=9.0.2"
         ],
     },
     entry_points={
